@@ -50,7 +50,7 @@ const Main = () => {
     <section className='mh6 mb3'>
       <Grid container spacing={2} className='mt5 mb3'>
         <Grid item md={8} xs={12} className='tc1'>
-          <Typography variant="h4" gutterBottom component="span">
+          <Typography variant="h4" gutterBottom component="span" className='fw7'>
             Search properties to rent
           </Typography>
         </Grid>
