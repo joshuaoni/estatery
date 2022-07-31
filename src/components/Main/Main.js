@@ -7,7 +7,7 @@ import SingleBedIcon from '@mui/icons-material/SingleBed';
 import HouseIcon from '@mui/icons-material/House';
 import SearchIcon from '@mui/icons-material/Search';
 import Filter from '../Filter/Filter';
-
+// images
 import img7 from '../../assets/1.jpg';
 import img8 from '../../assets/2.jpg';
 import img9 from '../../assets/3.jpg';
@@ -18,7 +18,7 @@ import img2 from '../../assets/7.jpg';
 import img3 from '../../assets/8.jpg';
 import img4 from '../../assets/9.jpg';
 
-
+// dummy properties data
 const properties = [
   { id: 1, image: img1, name: 'Palmer Harbour', price: 1000, type: 'office', location: 'London', size: 150 },
   { id: 2, image: img2, name: 'Beverly Springs', price: 200, type: 'office', location: 'Liverpool', size: 400 },
@@ -26,9 +26,9 @@ const properties = [
   { id: 4, image: img8, name: 'Peckham XY Palace', price: 4500, type: 'house', location: 'Peckham', size: 340 },
   { id: 5, image: img9, name: 'Everton XY Houses', price: 3400, type: 'house', location: 'Liverpool', size: 405 },
   { id: 6, image: img10, name: 'George XY Complex', price: 800, type: 'shop', location: 'Peckham', size: 480 },
-  { id: 7, image: img7, name: 'Seventh St. Houses', price: 3400, type: 'office', location: 'London', size: 190 },
-  { id: 8, image: img11, name: 'Birmngham St. Blk', price: 2800, type: 'shop', location: 'Peckham', size: 290 },
-  { id: 9, image: img4, name: 'Francis O. Duplex', price: 3800, type: 'house', location: 'London', size: 300 },
+  { id: 7, image: img7, name: 'Seventh St. Houses', price: 3400, type: 'shop', location: 'London', size: 190 },
+  { id: 8, image: img11, name: 'Birmngham St. Blk', price: 2800, type: 'office', location: 'Peckham', size: 290 },
+  { id: 9, image: img4, name: 'Francis XY. Duplex', price: 3800, type: 'house', location: 'London', size: 300 },
 ]
 
 const Main = () => {
@@ -38,6 +38,7 @@ const Main = () => {
     setEstates(val);
   }
 
+  // Search For Property By Name Function
   const handleChange = (val) => {
     const newState = properties.filter(obj => {
       return obj.name.toLowerCase().includes(val.trim().toLowerCase());
@@ -48,12 +49,13 @@ const Main = () => {
   return (
     <section className='mh6 mb3'>
       <Grid container spacing={2} className='mt5 mb3'>
-        <Grid item md={8} xs={12}>
-          <Typography variant="h4" gutterBottom component="span" className=''>
+        <Grid item md={8} xs={12} className='tc1'>
+          <Typography variant="h4" gutterBottom component="span">
             Search properties to rent
           </Typography>
         </Grid>
         <Grid item md={4} xs={12}>
+          {/* Search component */}
           <Paper
             className='input1'
             component="form"
@@ -72,6 +74,7 @@ const Main = () => {
         </Grid>
       </Grid>
 
+      {/* Filter Component */}
       <Filter properties={properties} settingEstates={settingEstates} />
 
       <Grid className='mt3' container spacing={2}>
@@ -89,7 +92,7 @@ const Main = () => {
                     />
                     <CardContent>
                       <div>
-                        <Typography variant="h6" gutterBottom component="div" className=''>
+                        <Typography variant="h6" gutterBottom component="div" color="secondary">
                           ${price}
                         </Typography>
                         <Typography gutterBottom variant="h5" component="div">
@@ -100,14 +103,14 @@ const Main = () => {
                         </Typography>
                       </div>
                       <Grid className='cont' container spacing={4}>
-                        <Grid item md={12} xs={4} className='flex gg'>
-                          <SingleBedIcon />
+                        <Grid item md={12} xs={4} className='flex g-grid'>
+                          <SingleBedIcon color="secondary" />
                           <Typography variant="body2" gutterBottom component="span" className='text-align-center heading-list'>
                             {type}
                           </Typography>
                         </Grid>
-                        <Grid item md={12} xs={8} className='flex gg'>
-                          <HouseIcon />
+                        <Grid item md={12} xs={8} className='flex g-grid'>
+                          <HouseIcon color="secondary" />
                           <Typography variant="body2" gutterBottom component="span" className='text-align-center heading-details'>
                             {size} sqr ft
                           </Typography>

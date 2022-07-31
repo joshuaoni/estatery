@@ -1,5 +1,5 @@
 .mv5 {
-  margin: 3rem 0 3rem 0 !important;
+  padding: 3rem 0 3rem 0 !important;
 }
 
 .purple {
@@ -15,11 +15,13 @@
 }
 
 .mb3 {
-  margin-bottom: 2rem !important;
+  padding-bottom: 2rem !important;
+  margin-bottom: 0 !important;
 }
 
 .br00 {
   border-radius: 0 !important;
+  background: white !important;
 }
 
 .mxc {
@@ -53,7 +55,7 @@
   margin: 0 !important;
 }
 
-.gg {
+.g-grid {
   padding-top: 10px !important;
 }
 
@@ -77,5 +79,13 @@
 
   .grd {
     margin-right: 8px !important;
+  }
+
+  .tc1 {
+    text-align: center;
+  }
+
+  .br00 {
+    border-radius: 4px !important;
   }
 }

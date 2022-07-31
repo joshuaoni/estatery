@@ -12,7 +12,7 @@ import Button from '@mui/material/Button';
 import MenuItem from '@mui/material/MenuItem';
 import DraftsIcon from '@mui/icons-material/Drafts';
 
-
+// Navbar links
 const pages = ['Buy', 'Sell', 'Rent'];
 
 const Navbar = () => {

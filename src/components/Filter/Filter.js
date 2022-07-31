@@ -6,8 +6,6 @@ import Select from '@mui/material/Select';
 import Grid from '@mui/material/Grid';
 import Button from '@mui/material/Button';
 
-
-
 const Filter = ({ properties, settingEstates }) => {
   const [price, setPrice] = useState('');
   const [type, setType] = useState('');
@@ -30,6 +28,7 @@ const Filter = ({ properties, settingEstates }) => {
     setSize(event.target.value);
   }
 
+  // Filter properties function
   const handleSubmit = () => {
     const newState = properties.filter(obj => {
       return obj.price <= price && obj.type === type && obj.location === location && obj.size <= size;
@@ -41,6 +40,7 @@ const Filter = ({ properties, settingEstates }) => {
     <div>
       <Grid container spacing={1}>
         <Grid className='grd' item md={2.4} xs={12}>
+          {/* Price Filter */}
           <FormControl className='w-100' sx={{ m: 1, minWidth: 120 }}>
             <InputLabel id="demo-simple-select-helper-label">Price</InputLabel>
             <Select
@@ -61,7 +61,9 @@ const Filter = ({ properties, settingEstates }) => {
 
           </FormControl>
         </Grid>
+
         <Grid item className='grd' md={2.4} xs={12}>
+          {/* Property Type Filter */}
           <FormControl className='w-100' sx={{ m: 1, minWidth: 120 }}>
             <InputLabel id="demo-simple-select-helper-label">Property Type</InputLabel>
             <Select
@@ -82,7 +84,9 @@ const Filter = ({ properties, settingEstates }) => {
 
           </FormControl>
         </Grid>
+
         <Grid item className='grd' md={2.4} xs={12}>
+          {/* Location Filter */}
           <FormControl className='w-100' sx={{ m: 1, minWidth: 120 }}>
             <InputLabel id="demo-simple-select-helper-label">Location</InputLabel>
             <Select
@@ -103,7 +107,9 @@ const Filter = ({ properties, settingEstates }) => {
 
           </FormControl>
         </Grid>
+
         <Grid item className='grd' md={2.4} xs={12}>
+          {/* Size Filter */}
           <FormControl className='w-100' sx={{ m: 1, minWidth: 120 }}>
             <InputLabel id="demo-simple-select-helper-label">Space</InputLabel>
             <Select
