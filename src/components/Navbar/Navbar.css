@@ -1,0 +1,22 @@
+nav {
+  height: 4rem;
+  width: 100%;
+  background: white;
+  box-shadow: 0 5px 15px #00000033;
+  z-index: 1;
+}
+
+.appbar {
+  background: white !important;
+  position: sticky !important;
+  z-index: 1 !important;
+  top: 0 !important;
+}
+
+.bg-purple {
+  background: purple !important;
+}
+
+.mr2 {
+  margin-right: 0.5rem !important;
+}
