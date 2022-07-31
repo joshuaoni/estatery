@@ -65,7 +65,7 @@ const Filter = ({ properties, settingEstates }) => {
         <Grid item className='grd' md={2.4} xs={12}>
           {/* Property Type Filter */}
           <FormControl className='w-100' sx={{ m: 1, minWidth: 120 }}>
-            <InputLabel id="demo-simple-select-helper-label">Property Type</InputLabel>
+            <InputLabel id="demo-simple-select-helper-label">Type</InputLabel>
             <Select
               className='br00'
               labelId="demo-simple-select-helper-label"
