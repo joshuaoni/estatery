@@ -71,7 +71,7 @@ const Filter = ({ properties, settingEstates }) => {
               labelId="demo-simple-select-helper-label"
               id="demo-simple-select-helper"
               value={type}
-              label="Property Type"
+              label="Type"
               onChange={handleType}
             >
               <MenuItem value="">
