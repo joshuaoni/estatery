@@ -31,7 +31,7 @@ const Filter = ({ properties, settingEstates }) => {
   // Filter properties function
   const handleSubmit = () => {
     const newState = properties.filter(obj => {
-      return obj.price <= price && obj.type === type && obj.location === location && obj.size <= size;
+      return obj.price <= price && obj.type.includes(type) && obj.location.includes(location) && obj.size <= size;
     })
     settingEstates(newState);
   }

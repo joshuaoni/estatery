@@ -20,8 +20,8 @@ import img4 from '../../assets/9.jpg';
 
 // dummy properties data
 const properties = [
-  { id: 1, image: img1, name: 'Palmer Harbour', price: 1000, type: 'office', location: 'London', size: 150 },
   { id: 2, image: img2, name: 'Beverly Springs', price: 200, type: 'office', location: 'Liverpool', size: 400 },
+  { id: 1, image: img1, name: 'Palmer Harbour', price: 1000, type: 'office', location: 'London', size: 150 },
   { id: 3, image: img3, name: 'Faulker Avenue', price: 1350, type: 'shop', location: 'Liverpool', size: 230 },
   { id: 4, image: img8, name: 'Peckham XY Palace', price: 4500, type: 'house', location: 'Peckham', size: 340 },
   { id: 5, image: img9, name: 'Everton XY Houses', price: 3400, type: 'house', location: 'Liverpool', size: 405 },
